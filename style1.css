@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* navbar */
+
+.nav-item {
+    font-size: larger;
+    justify-content: space-around;
+    margin: 0 2rem;
+}
+
+.navbar-text {
+    color: black;
+    background: linear-gradient(360deg, #1c2826, #b9baa3);
+    opacity: 0.7;
+}
+
+.nav-item a {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    background-color: #1c2826;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+
+/* navbar end  */
+
+body {
+    background: linear-gradient(90deg, #1c2826, #b9baa3);
+}
+
+
+/* our offer section start */
+
+.main-boxx {
+    display: flex;
+}
+
+.box {
+    width: 400px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    position: relative;
+    perspective: 1000px;
+}
+
+.box .box-img {
+    transform: rotateY(0);
+    transition: all .5s ease-in-out 0s;
+}
+
+.box:hover .box-img {
+    transform: rotateY(-90deg);
+}
+
+.box .box-img img {
+    width: 100%;
+    height: auto;
+}
+
+.box-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    transform: rotateY(90deg);
+    transition: all.5s ease-in-out 0s;
+}
+
+.box:hover .box-content {
+    transform: rotateY(0);
+}
+
+
+/* our offer section end */
+
+
+/* footer start  */
+
+footer {
+    background-color: #010413;
+    color: skyblue;
+    position: relative;
+}
+
+.up {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    font-size: x-large;
+    padding: 5px;
+}
+
+.up:hover {
+    background-color: white;
+    color: orange;
+    transition: color .5s;
+    border-radius: 30px;
+}
+
+.footer-text {
+    text-transform: uppercase;
+}
+
+.footer-text div h1 {
+    font-size: larger;
+}
+
+.f-text li a {
+    text-decoration: none;
+    color: white;
+}
+
+.f-text li a:hover {
+    font-size: larger;
+    transition: all .5s;
+    padding: 10px;
+}
+
+.f-text li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.ff-text {
+    display: flex;
+    font-size: x-large;
+}
+
+.ff-text li {
+    list-style-type: none;
+    padding: 5px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.ff-text li a {
+    text-decoration: none;
+}
+
+.ff-text li:hover {
+    background-color: white;
+    border-radius: 50%;
+    font-size: xx-large;
+    transition: all .5s;
+}
+
+.image {
+    width: 100%;
+    -webkit-animation: spin 5s linear infinite;
+    -moz-animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite;
+}
+
+@-moz-keyframes spin {
+    50% {
+        -moz-transform: rotateY(90deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    50% {
+        -webkit-transform: rotateY(90deg);
+    }
+}
+
+@keyframes spin {
+    50% {
+        -webkit-transform: rotateY(90deg);
+        transform: rotateY(90deg);
+    }
+}
+
+
+/* footer end  */
+
+
+/* -------------------------------------------- */
