@@ -195,3 +195,33 @@ footer {
 
 
 /* -------------------------------------------- */
+
+
+/* -----desktop view ---- */
+
+
+/* -----tablet view ---- */
+
+@media (max-width:768px)and (max-width:1023px) {
+    .f-text li {
+        padding: 10px;
+    }
+    .ff-text {
+        font-size: 15px;
+        flex-direction: column;
+    }
+}
+
+
+/* -----mobile view ---- */
+
+@media (min-width:360px) and (max-width:565px) {
+    .main-boxx {
+        display: flex;
+        flex-direction: column;
+    }
+    .box {
+        width: 250px;
+        margin: 0 auto;
+    }
+}

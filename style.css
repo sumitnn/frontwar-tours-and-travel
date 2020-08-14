@@ -376,3 +376,60 @@ footer {
 
 
 /* -------------------------------------------- */
+
+
+/* -----desktop view ---- */
+
+@media (min-width:1024px) {}
+
+
+/* -----tablet view ---- */
+
+@media (max-width:768px)and (max-width:1023px) {
+    .f-text li {
+        padding: 10px;
+    }
+    .ff-text {
+        font-size: 15px;
+        flex-direction: column;
+    }
+}
+
+
+/* -----mobile view ---- */
+
+@media (min-width:768px) and (max-width:1028px) {
+    .sec {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width:360px)and (max-width:640px) {
+    .sec_text h1 {
+        font-size: 15px;
+        color: lightgreen;
+    }
+    .sec_text h3 {
+        font-size: 15px;
+        color: lightgreen;
+    }
+    .sec_text p {
+        font-size: 10px;
+        color: lightcoral;
+        margin-bottom: 2px;
+    }
+    .sec_text a {
+        padding: 5px 5px;
+        font-size: 10px;
+        font-weight: 200;
+        margin-right: 5px;
+    }
+    .sec {
+        width: 100%;
+        height: auto;
+    }
+    .single-album {
+        margin-top: 15px;
+    }
+}
